@@ -1,0 +1,201 @@
+.header{
+  background-image: url("../images/header-bg.jpg");
+  height: 718px;
+  padding: 28px 303px 0 330px;
+  box-sizing: border-box;
+  color: var(--white-color);
+  position: relative;
+  &__name{
+    margin-left: 104px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+  }
+  &__top-menu{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 26px;
+    height: 18px;
+  }
+  &__top-header{
+    margin: 0;
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    color: var(--white-color);
+  }
+  &__top-header-link{
+    text-decoration: none;
+    color: var(--white-color);
+    border-bottom: 2px solid var(--orange-color);
+    position: relative;
+    transition: color 0.3s;
+    &::before{
+      display: block;
+      content: "";
+      width: 13px;
+      height: 7px;
+      clip-path: polygon(50% 100%, 0 0, 100% 0);
+      background: var(--orange-color);
+      position: absolute;
+      top: 5px;
+      left: -20px;
+    }
+    &:hover{
+      color: var(--orange-color);
+      transition: color 0.3s;
+    }
+  }
+  &__top-header-number{
+    line-height: 24px;
+    cursor: pointer;
+    color: var(--white-color);
+    text-decoration: none;
+    transition: color 0.3s;
+    &:hover{
+      color: var(--orange-color);
+      transition: color 0.3s;
+    }
+  }
+  &__top-header-btn{
+    border: none;
+    background: none;
+    color: var(--white-color);
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    text-decoration: underline;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    padding: 0;
+    &:hover{
+      color: var(--orange-color);
+      transition: color 0.3s;
+    }
+  }
+  &__main-header{
+    display: flex;
+  }
+  &__main-menu{
+    width: 100%;
+    opacity: 0.8;
+    background-color: #1b1a1a;
+    border-radius: 3px;
+    padding-left: 50px;
+    box-sizing: border-box;
+  }
+  &__logo{
+    width: 121px;
+    height: 112px;
+    position: absolute;
+    top: 38px;
+    left: 300px;
+    z-index: 2;
+  }
+  &__nav{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    padding: 13px 0 15px 50px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  &__nav-link{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+    transition: color 0.3s;
+
+    &:hover{
+      color: var(--orange-color);
+      transition: color 0.3s;
+    }
+  }
+  &__banner-text{
+    position: absolute;
+    bottom: 51px;
+    display: flex;
+    left: 474px;
+  }
+  &__banner-title{
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 500;
+    letter-spacing: 0.025em;
+    margin-left: 22px;
+    margin-right: 51px;
+    width: 180px;
+  }
+  &__banner-links{
+    position: relative;
+    width: 40px;
+    cursor: pointer;
+    &:hover{
+      .header__banner-line1, .header__banner-line2, .header__banner-line3, .header__banner-line4{
+        background-color: var(--orange-color);
+        transition: background-color 0.3s;
+      }
+    }
+  }
+  &__banner-link{
+    position: relative;
+    cursor: pointer;
+  }
+  &__banner-line1{
+    width: 36px;
+    height: 7px;
+    background-color: white;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 53px;
+    left: 0px;
+    transition: background-color 0.3s;
+  }
+  &__banner-line2{
+    width: 36px;
+    height: 7px;
+    background-color: white;
+    transform: rotate(-45deg);
+    position: absolute;
+    top:75px;
+    left: 0;
+    transition: background-color 0.3s;
+  }
+  &__banner-line3{
+    width: 36px;
+    height: 7px;
+    background-color: white;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 53px;
+    left: 20px;
+    transition: background-color 0.3s;
+  }
+  &__banner-line4{
+    width: 36px;
+    height: 7px;
+    background-color: white;
+    transform: rotate(-45deg);
+    position: absolute;
+    top:75px;
+    left: 20px;
+    transition: background-color 0.3s;
+  }
+  &__banner-dark-block{
+    width: 50px;
+    height: 27px;
+    opacity: 0.2;
+    position: absolute;
+    top: 40px;
+    left: 4px;
+    background: gray;
+  }
+
+}
