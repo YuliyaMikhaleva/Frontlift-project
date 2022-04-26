@@ -1,0 +1,30 @@
+.catalog-card{
+  display: flex;
+  background-image: url("../images/card-bg.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: right;
+  height: 419px;
+  &__title{
+    margin: 47px 0 26px 0;
+    font-size: 27px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #222222;
+  }
+  &__img{
+    margin-left: 264px;
+    transform: scale(0.9);
+  }
+  &__name-company{
+    color: var(--orange-color);
+  }
+  &__params{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: var(--gray-color);
+  }
+}

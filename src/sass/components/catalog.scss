@@ -1,0 +1,23 @@
+.catalog{
+  min-height: 2280px;
+  background-color: var(--white-color);
+  padding-top: 103px;
+  box-sizing: border-box;
+  &__title{
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 300;
+    margin: 0 0 27px 0;
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.025em;
+    margin: 0;
+  }
+  &__description{
+    max-width: 815px;
+    margin-left: auto;
+    margin-bottom: 124px;
+  }
+}

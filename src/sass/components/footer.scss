@@ -3,10 +3,10 @@
   box-sizing: border-box;
   background-color: #333333;
   color: var(--white-color);
-  &__container{
-    width: 1313px;
-    height: 458px;
-    margin: 0 auto;
+  &__link{
+    text-decoration: none;
+    color: var(--white-color);
+    border-bottom: 1px solid var(--orange-color);
   }
   &__nav{
     display: grid;
@@ -17,26 +17,60 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-
+    gap: 16px;
+    padding: 0;
+    &:nth-child(1){
+      margin-right: 103px;
+    }
+    &:nth-child(2){
+      margin-right: 52px;
+    }
+    &:nth-child(3){
+      margin-right: 67px;
+    }
+    &:nth-child(4){
+      margin-right: 103px;
+    }
   }
   &__nav-link{
     text-decoration: none;
     color: var(--white-color);
     transition: color 0.3s;
     cursor: pointer;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 300;
     &:hover{
       color: var(--orange-color);
       transition: color 0.3s;
     }
+
   }
+  &__nav-link-city{
+    position: relative;
+    padding-left: 13px;
+    box-sizing: border-box;
+
+    &:after{
+      display: block;
+      content: "";
+      width: 13px;
+      height: 7px;
+      clip-path: polygon(50% 100%, 0 0, 100% 0);
+      background: var(--orange-color);
+      position: absolute;
+      top: 5px;
+      left: -5px;
+    }
+  }
+
   &__nav-mail{
     color: var(--orange-color);
   }
   &__nav-list-title{
     font-weight: bold;
     display: block;
-    margin-bottom: 21px;
+    margin-bottom: 5px;
     white-space: nowrap;
   }
   &__bottom{
@@ -45,7 +79,7 @@
   }
   &__bottom-btn{
     background-color: var(--orange-color);
-    padding: 22px 29px 23px 25px;
+    padding: 22px 62px 23px 25px;
     box-sizing: border-box;
     color: var(--white-color);
     border: none;
@@ -54,13 +88,76 @@
     line-height: 16px;
     font-weight: 700;
     letter-spacing: 0.05em;
+    cursor:pointer;
+    transition: opacity 0.3s;
+    position: relative;
+    &:hover{
+      opacity: 0.8;
+      transition: opacity 0.3s;
+    }
+    &:after{
+      display: block;
+      width: 13px;
+      height: 14px;
+      content: "";
+      background-image: url("../images/file-icon.png");
+      position: absolute;
+      top: 21px;
+      right: 29px;
+    }
   }
   &__bottom-search{
     border: none;
     background: none;
     color: var(--orange-color);
     cursor: pointer;
+    transition: opacity 0.3s;
+    position: relative;
+    margin-right: 240px;
+    &:hover{
+      opacity: 0.8;
+      transition: opacity 0.3s;
+    }
+    &:before{
+      display: block;
+      width: 17px;
+      height: 17px;
+      content: "";
+      background-image: url("../images/search-icon.png");
+      position: absolute;
+      top: 22px;
+      left: -29px;
+    }
+
   }
+  &__bottom-krmz{
+    position: relative;
+    padding: 22px 0 23px 0;
+    box-sizing: border-box;
+
+    cursor: pointer;
 
 
+    &:after{
+      display: block;
+      width: 81px;
+      height: 39px;
+      content: "";
+      background-image: url("../images/krmz-logo.png");
+      position: absolute;
+      top: 12px;
+      left: -89px;
+    }
+
+  }
+  &__bottom-link{
+    text-decoration: none;
+    color: var(--orange-color);
+    transition: opacity 0.3s;
+
+    &:hover{
+      opacity: 0.8;
+      transition: opacity 0.3s
+    }
+  }
 }
