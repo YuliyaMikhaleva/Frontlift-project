@@ -1,18 +1,24 @@
-<section class="catalog">
-  <div class="container">
-    <div class="catalog__description">
-      <h2 class="catalog__title">Погрузчики <span class="name-company">frontlift</span> - это инновационные инженерные решения</h2>
-      <p class="catalog__text">Навесной фронтальный погрузчики <span class="name-company">frontlift</span> - ваш надежный помощник на сельхозпредприятии любого размера: от небольшой фермы до огромного агрохолдинга. Погрузчики <span class="name-company">frontlift</span> также безотказно работают и на заготовке древесины, и в коммунальном хозяйстве.</p>
-    </div>
-  </div>
-  <div class="catalog__card catalog-card">
-    <div class="catalog__card-img">
-      <img src="../images/card-img1.png" alt="card-img">
-    </div>
-    <div class="catalog__card-block">
-      <h2 class="catalog-card__title">Погрузчики фронтальные <span class="name-company catalog-card__name-company">frontlift fl</span></h2>
-      <span class="catalog-card__params">1200, 1600, базовая комплектация</span>
-      <p>Навесной фронтальный погрузчики <span class="name-company">frontlift</span> послужит вам: на сельхозпредприятии: для транспортировки и погрузки рулонов сенажа, выемки силоса, перегрузке зерна, удобрений и т.п. При заготовке леса: для укладки бревен, транспортировки и погрузки пиломатериалов. На коммунальных работах.</p>
-    </div>
-  </div>
-</section>
+section.catalog
+  .container
+    .catalog__description
+      h2.catalog__title Погрузчики&nbsp
+        span.name-company frontlift
+        | - это инновационные инженерные решения
+      p.catalog__text Навесной фронтальный погрузчики&nbsp
+        span.name-company frontlift
+        | - ваш надежный помощник на сельхозпредприятии любого размера: от небольшой фермы до огромного агрохолдинга. Погрузчики&nbsp
+        span.name-company frontlift
+        | также безотказно работают и на заготовке древесины, и в коммунальном хозяйстве.
+
+    .catalog__card.catalog-card
+      .catalog__card-img
+        img(src="../images/card-img1.png" alt="card-img")
+      .catalog__card-block
+        h2.catalog__card__title Погрузчики фронтальные&nbsp
+          span.name-company.catalog__card__name-company frontlift fl
+        span.catalog-card__params 1200, 1600, базовая комплектация
+        p Навесной фронтальный погрузчики&nbsp
+          span.catalog-card__params 1200, 1600, базовая комплектация
+        p Навесной фронтальный погрузчики&nbsp
+          span.name-company frontlift
+        | послужит вам: на сельхозпредприятии: для транспортировки и погрузки рулонов сенажа, выемки силоса, перегрузке зерна, удобрений и т.п. При заготовке леса: для укладки бревен, транспортировки и погрузки пиломатериалов. На коммунальных работах.
